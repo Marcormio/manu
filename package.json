@@ -1,20 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "DAG-visualization-app",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A desktop application for visualizing DAGs and trees for tumoral cells",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Marcormio/manu",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Electron"
   ],
-  "author": "GitHub",
+  "author": "Marcormio",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^3.0.0"
