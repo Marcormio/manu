@@ -5,6 +5,10 @@
 		<title>DAG visualization app</title>
 
 		<link rel="stylesheet" href="css/index_style.css">
+
+		<!--Needed for cytoscape, before this, style for the container is set in index_style.css above ^ -->
+		<script src="cytoscape.js"></script>
+
 	</head>
 	<body>
 		<div id="container">
@@ -12,7 +16,7 @@
 				<h1>Here are the trees</h1>
 				<!-- All of the Node.js APIs are available in this renderer process. -->
 			</div>
-
+			<div id="cy"></div>
 			<div id="functions">
 				 <button type="button">Crea DAG</button> 
 			</div>
