@@ -6,8 +6,6 @@ var cytoscape = require('cytoscape');
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
-  boxSelectionEnabled: false,
-  autounselectify: true,
 
   layout: {
     name: 'grid'
@@ -21,7 +19,6 @@ var cy = cytoscape({
         'text-opacity': 0.5,
         'text-valign': 'center',
         'text-halign': 'right',
-        'background-color': '#11479e'
       }
     },
 
