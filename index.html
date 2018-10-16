@@ -11,17 +11,18 @@
 
 	</head>
 	<body>
-		<div id="container">
-			<div id="title">
+		<div class="container">
+			<div class="title">
+				<p style="float: right" class="unselectable">Press f11 to toggle fullscreen</p>
 				<h1 class="unselectable">Here are the trees</h1>
 				<!-- All of the Node.js APIs are available in this renderer process. -->
+				<div class="functions">
+					<button class="unselectable" type="button">Crea DAG</button> 
+				</div>
 			</div>
-			<div id="functions">
-				 <button class="unselectable" type="button">Crea DAG</button> 
-			</div>
-			<br><br>
+			<br>
 			<div id="cy"></div>
-			<div class="unselectable" id="footer">
+			<div class="unselectable footer">
 				We are using Node.js <script>document.write(process.versions.node)</script>,
 				Chromium <script>document.write(process.versions.chrome)</script>,
 				and Electron <script>document.write(process.versions.electron)</script>.
