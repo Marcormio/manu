@@ -77,6 +77,9 @@ var cy = cytoscape({
   },
 });
 
+document.getElementById("crea").addEventListener("click", function(){
+    document.getElementById("crea").innerHTML = "Hello World";
+}); 
 
 document.addEventListener("keydown", event => {
 
