@@ -16,7 +16,7 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: 0px;
+    margin: 5px;
 }
 
 .unselectable {
@@ -26,4 +26,8 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.info{
+	float: right;
 }
