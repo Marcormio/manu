@@ -1,14 +1,33 @@
-#footer{
-	position: absolute;
-	bottom: 0;
-}
-
-#functions{
-	float: right;
-}
-
-#mynetwork {
-	width: 600px;
+#cy {
+	min-width: 600px;
 	height: 400px;
-	border: 1px solid lightgray;
+	margin-right: 100px;
+	margin-bottom: 20px;
+	display: block;
+	border: 3px solid #73AD21;
+}
+
+.functions button{
+	margin: 5px;
+}
+
+.footer {
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 5px;
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.info{
+	float: right;
 }

@@ -6,57 +6,23 @@
 
 		<link rel="stylesheet" href="css/index_style.css">
 
-		<!-- Necessary for vis -->
-		<script type="text/javascript" src="./node_modules/vis/dist/vis.js"></script>
-	    <link href="./node_modules/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+		<!--Needed for cytoscape, before this, style for the container is set in index_style.css above ^ -->
+		<script src="./node_modules/cytoscape/dist/cytoscape.js"></script>
 
 	</head>
 	<body>
-		<div id="container">
-			<div id="title">
-				<h1>Here are the trees</h1>
+		<div class="container">
+			<div class="title">
+				<p class="unselectable info">Press f11 to toggle fullscreen</p>
+				<h1 class="unselectable">Here are the trees</h1>
 				<!-- All of the Node.js APIs are available in this renderer process. -->
+				<div class="functions">
+					<button id="crea" class="unselectable" type="button">Crea DAG</button> 
+				</div>
 			</div>
-
-			<div id="functions">
-				 <button type="button">Crea DAG</button> 
-			</div>
-
-			<div id="mynetwork"></div>
-
-			<script type="text/javascript">
-			    // create an array with nodes
-			    var nodes = new vis.DataSet([
-			        {id: 1, label: 'Node 1'},
-			        {id: 2, label: 'Node 2'},
-			        {id: 3, label: 'Node 3'},
-			        {id: 4, label: 'Node 4'},
-			        {id: 5, label: 'Node 5'}
-			    ]);
-
-			    // create an array with edges
-			    var edges = new vis.DataSet([
-			        {from: 1, to: 3},
-			        {from: 1, to: 2},
-			        {from: 2, to: 4},
-			        {from: 2, to: 5}
-			    ]);
-
-			    // create a network
-			    var container = document.getElementById('mynetwork');
-
-			    // provide the data in the vis format
-			    var data = {
-			        nodes: nodes,
-			        edges: edges
-			    };
-			    var options = {};
-
-			    // initialize your network!
-			    var network = new vis.Network(container, data, options);
-			</script>
-			
-			<div id="footer">
+			<br>
+			<div id="cy"></div>
+			<div class="unselectable footer">
 				We are using Node.js <script>document.write(process.versions.node)</script>,
 				Chromium <script>document.write(process.versions.chrome)</script>,
 				and Electron <script>document.write(process.versions.electron)</script>.
