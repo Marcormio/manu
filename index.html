@@ -17,6 +17,7 @@
 				<h1 class="unselectable">Here are the trees</h1>
 				<!-- All of the Node.js APIs are available in this renderer process. -->
 				<div class="functions">
+					<input type="file" name="file" id="file">
 					<button id="crea" class="unselectable" type="button">Crea DAG</button> 
 				</div>
 			</div>
@@ -32,6 +33,7 @@
 		<script>
 			// You can also require other files to run in this process
 			require('./js/renderer.js')
+			require('./js/buttons.js')
 		</script>
 	</body>
 </html>
