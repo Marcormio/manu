@@ -90,3 +90,10 @@ document.addEventListener("keydown", event => {
 });
 
 //SSH key test with psw
+
+//search node
+document.getElementById("node-search").addEventListener("click", function(){
+  x = document.getElementById("search-bar").value ;
+  node = cy.$id(x);
+  node.select();
+}); 
