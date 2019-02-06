@@ -10,11 +10,6 @@ body{
 }
 
 #cy {
-	position: absolute;
-	top: 90px;
-	bottom: 0;
-	right: 0;
-	left: 0;
 	min-width: 600px;
 	min-height: 400px;
 	margin-right: 100px;
