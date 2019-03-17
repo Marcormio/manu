@@ -1,32 +1,27 @@
-// Modules to control application life and create native browser window
+// Moduli per controllare la creazione e chiusura delle finestre
 const {app, BrowserWindow} = require('electron')
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+// Bisogna tenere un riferimento globale all'oggetto finestra, altrimenti
+// la finestra verrà chiusa non appena l'oggetto viene eliminato tramite 
+// garbage collection.
 let mainWindow
 
 function createWindow () {
-	// Create the browser window.
+	// Creazione della finestra 
 	mainWindow = new BrowserWindow({width: 1000, height: 600})
 
-	// and load the index.html of the app.
+	// Caricamento di index.html 
 	mainWindow.loadFile('index.html')
 
-	// Open the DevTools.
-	// mainWindow.webContents.openDevTools()
-
-	// Emitted when the window is closed.
+	// Quando la finestra viene chiusa
 	mainWindow.on('closed', function () {
-		// Dereference the window object, usually you would store windows
-		// in an array if your app supports multi windows, this is the time
-		// when you should delete the corresponding element.
 		mainWindow = null
 	})
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
+// Metodo chiamato quando Electron è pronto per creare finestre 
+// del browser, finita l'inizializzaizione.
+// Alcune APIs possono essere usate solo da ora.
 app.on('ready', createWindow)
 
 // Quit when all windows are closed.
